@@ -27,19 +27,32 @@ main {
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the logo container vertically */
+    align-items: center; /* Center the logo container horizontally */
 }
 
 .logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo and text horizontally */
+    padding: 20px;
+    width:100%;
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
-    padding: 10px;
     border-radius: 5px;
 }
 
-.logo {
-    width: 100px;
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    color: white;
+    font-family: 'Norse', sans-serif;
+    font-size: 50px;
+    margin: 0;
 }
 
 .form-section {
@@ -53,8 +66,6 @@ main {
 
 header {
     text-align: center;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ddd;
     font-family: 'Norse', sans-serif; /* Apply Norse font */
     padding: 20px;
 }
@@ -156,7 +167,9 @@ h2 {
 .footer a:hover {
     color: #004d40;
 }
-footer
-{
-color: white;
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
